@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="base">
+    <section class="base1"><br><br>
+        <h1>DISPLAYING THE NAME (PROMPT)</h1><br>
+        <p>CLICK THE BUTTON AND ENTER YOUR NAME <br>ON PROMT BOX TO DISPLAY YOUR NAME</p><br><br>
+        <a class="button1" onclick="confirm1()">Your name</a><br><br>
+
+        <h4 id="namee"></h4>
+        <script>
+            function confirm1() {
+                name = prompt("ENTER YOUR NAME", "")
+                {
+                    document.getElementById("namee").innerHTML = "Hello " + name + "...!" + "How are you?";
+                }
+            }
+        </script><br><br>
+    </section><br><br>
+    <section class="base1"><br><br>
+        <h1>POLICY ACCEPTING (POPUP)</h1>   <br>
+            <a class="button1" onclick="policy()">Your name</a><br><br>
+        <h4 id="de"></h4>
+        <script>
+            function policy() {
+                var txt;
+                if (confirm("will you accept or reject")) {
+                    txt = (" you accepted the policy");
+                }
+                else { txt = ("you rejected the policy"); }
+                document.getElementById("de").innerHTML = txt;
+
+            }
+        </script><br><br>
+    </section><br><br>
+    <section class="base1"><br><br>
+        <h1>SUBMIT YOUR DETAILS</h1>
+        <p> CLICK THE BUTTON TO SUBMIT</p><br><br>
+        <a class="button1" onclick="alrt()">SUBMIT</a><br><br>
+        <script>
+            function alrt() {
+                alert("CLICK OK TO SUBMIT YOUR DETAILS TO ADMIN");
+            }
+        </script><br><br>
+    </section>
+</body>
+
+</html>
